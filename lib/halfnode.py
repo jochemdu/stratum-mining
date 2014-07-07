@@ -29,6 +29,9 @@ elif settings.COINDAEMON_ALGO == 'scrypt-jane':
 elif settings.COINDAEMON_ALGO == 'quark':
     log.debug("########################################### Loading Quark Support #########################################################")
     import quark_hash
+elif settings.COINDAEMON_ALGO == 'fresh':
+    log.debug("########################################### Loading FRESH Support #########################################################")
+    import fresh_hash
 elif settings.COINDAEMON_ALGO == 'skeinhash':
     import skeinhash
 
